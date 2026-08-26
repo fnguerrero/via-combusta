@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vía Combusta</title>
+<meta name="description" content="Una historia de terror en doce casas, jugada sobre una carta natal real y calculada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app"></div>
+
+<script src="js/astro/vsop87.js"></script>
+<script src="js/astro/ephemeris.js"></script>
+<script src="js/astro/chart.js"></script>
+<script src="js/astro/dignities.js"></script>
+<script src="js/astro/places.js"></script>
+<script src="js/game/story.js"></script>
+<script src="js/game/puzzles.js"></script>
+<script src="js/game/wheel.js"></script>
+<script src="js/game/engine.js"></script>
+<script>
+  Game.init(document.getElementById('app'));
+</script>
+</body>
+</html>
